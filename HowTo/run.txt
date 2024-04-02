@@ -1,0 +1,11 @@
+// compile all classes, declutter by moving them into a separate folder 
+
+javac -d Classes/ Src/*.java Main/*.java Testers/*.java
+
+//Run kruskal main for two different examples
+
+java -cp Classes kruskalMain Data/UGraphs/myWeightedGraph1.tgf Output/minimumSpanningTree1.tgf
+
+java -cp Classes kruskalMain Data/UGraphs/myWeightedGraph2.tgf Output/minimumSpanningTree2.tgf
+
+

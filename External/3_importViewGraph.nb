@@ -1,0 +1,201 @@
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[         0,          0]
+NotebookDataLength[      8040,        200]
+NotebookOptionsPosition[      6804,        164]
+NotebookOutlinePosition[      7240,        181]
+CellTagsIndexPosition[      7197,        178]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Import and view a graph", "Title",
+ CellChangeTimes->{{3.8521977166640253`*^9, 3.852197728332827*^9}, {
+  3.852773684532152*^9, 3.852773687871117*^9}, {3.852775593969205*^9, 
+  3.852775597690875*^9}},ExpressionUUID->"87ba3b5b-771b-44a0-8189-\
+bc7f77f5baa6"],
+
+Cell["\<\
+Ileana Streinu
+CSC253 Spring 2022\
+\>", "Text",
+ CellChangeTimes->{{3.852197638812299*^9, 3.8521976531225863`*^9}, {
+  3.8521979518622923`*^9, 3.852197955242042*^9}, {3.85277369458788*^9, 
+  3.852773711542439*^9}, {3.852924317109109*^9, 
+  3.8529243175170403`*^9}},ExpressionUUID->"f0c97f08-ecff-44e0-ac04-\
+f3d73b4f7585"],
+
+Cell[CellGroupData[{
+
+Cell["Paths", "Section",
+ CellChangeTimes->{{3.852773724395504*^9, 3.8527737298053837`*^9}, 
+   3.852924383269093*^9},ExpressionUUID->"8067a23c-56f2-49b8-8d61-\
+731c738d671e"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"INPUTDIRU", "=", 
+   RowBox[{
+    RowBox[{"NotebookDirectory", "[", "]"}], "<>", 
+    "\"\<../Java/Output/\>\""}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8527737405420227`*^9, 3.8527737856918373`*^9}, 
+   3.8527739488328447`*^9, {3.852924352601555*^9, 3.852924352845223*^9}, {
+   3.852931918362618*^9, 3.852931922573937*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"67b74d6f-746c-4211-b601-bdf8a44774c1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Import and visualize", "Section",
+ CellChangeTimes->{{3.852924714108108*^9, 
+  3.852924720419619*^9}},ExpressionUUID->"ef28fac9-ff42-4060-9477-\
+376b39fc372a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"UGRAPH01", "=", 
+   RowBox[{"UndirectedGraph", "[", 
+    RowBox[{"Import", "[", 
+     RowBox[{"INPUTDIRU", "<>", "\"\<graph01.tgf\>\""}], "]"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"SetProperty", "[", 
+  RowBox[{"UGRAPH01", ",", 
+   RowBox[{"VertexLabels", "\[Rule]", "Automatic"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8521967099242887`*^9, 3.852196750684906*^9}, {
+   3.852197022770217*^9, 3.8521970348050203`*^9}, {3.8521975375256023`*^9, 
+   3.852197538272118*^9}, {3.852199191126163*^9, 3.8521991973512573`*^9}, {
+   3.852773797751464*^9, 3.852773801655624*^9}, {3.85277393418889*^9, 
+   3.852773982830739*^9}, {3.852775625543017*^9, 3.852775642678549*^9}, {
+   3.8527760825324593`*^9, 3.852776121081209*^9}, {3.852924375587503*^9, 
+   3.852924410205019*^9}, {3.852924535368251*^9, 3.852924574050782*^9}, {
+   3.852924644730299*^9, 3.8529246699699297`*^9}, {3.852924981237886*^9, 
+   3.85292498406341*^9}, 3.852925129786364*^9, {3.852925240141261*^9, 
+   3.852925269205125*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"2ef42223-2d33-4162-becb-6e1f467f162d"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{0, 1, 2, 3, 4, 5}, {Null, 
+       SparseArray[
+       Automatic, {6, 6}, 0, {
+        1, {{0, 2, 6, 9, 11, 12, 12}, {{2}, {3}, {1}, {3}, {4}, {5}, {1}, {
+          2}, {4}, {2}, {3}, {2}}}, Pattern}]}, {
+      VertexLabels -> {Automatic}}]]}, 
+    TagBox[GraphicsGroupBox[{
+       {Hue[0.6, 0.7, 0.5], Opacity[0.7], Arrowheads[0.], 
+        ArrowBox[{{{0.540994463445052, -1.9003308782311727`}, {
+         1.1716361754316242`, -1.0663003570038603`}}, {{
+         0.540994463445052, -1.9003308782311727`}, {
+         0.23561379410097327`, -1.0688733331253024`}}, {{
+         1.1716361754316242`, -1.0663003570038603`}, {
+         0.23561379410097327`, -1.0688733331253024`}}, {{
+         1.1716361754316242`, -1.0663003570038603`}, {
+         0.5345821289463455, -0.2356137941009735}}, {{
+         1.1716361754316242`, -1.0663003570038603`}, {
+         2.3405574155863493`, -1.0648220293638044`}}, {{
+         0.23561379410097327`, -1.0688733331253024`}, {
+         0.5345821289463455, -0.2356137941009735}}}, 
+         0.023705039933973077`]}, 
+       {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[
+        0.7]}], {
+         DiskBox[{0.540994463445052, -1.9003308782311727}, 
+          0.023705039933973077], 
+         InsetBox["0", 
+          Offset[{2, 2}, {0.5646995033790251, -1.8766258382971996}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{1.1716361754316242, -1.0663003570038603}, 
+          0.023705039933973077], 
+         InsetBox["1", 
+          Offset[{2, 2}, {1.1953412153655973, -1.0425953170698872}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{0.23561379410097327, -1.0688733331253024}, 
+          0.023705039933973077], 
+         InsetBox["2", 
+          Offset[{2, 2}, {0.2593188340349464, -1.0451682931913293}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{0.5345821289463455, -0.2356137941009735}, 
+          0.023705039933973077], 
+         InsetBox["3", 
+          Offset[{2, 2}, {0.5582871688803186, -0.21190875416700042}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{2.3405574155863493, -1.0648220293638044}, 
+          0.023705039933973077], 
+         InsetBox["4", 
+          Offset[{2, 2}, {2.3642624555203224, -1.0411169894298313}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{0.23561379410097347, -2.3715584664331195}, 
+          0.023705039933973077], 
+         InsetBox["5", 
+          Offset[{2, 2}, {0.25931883403494654, -2.3478534264991464}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}}}],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False]],
+  DefaultBaseStyle->{
+   "NetworkGraphics", FrontEnd`GraphicsHighlightColor -> Hue[0.8, 1., 0.6]},
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellChangeTimes->{{3.852196739621792*^9, 3.852196751837411*^9}, 
+   3.8521970373307667`*^9, {3.852197539624778*^9, 3.852197562371091*^9}, 
+   3.8521976067848263`*^9, 3.8521982036359262`*^9, 3.8521991988510237`*^9, 
+   3.852773994213719*^9, {3.852776071394228*^9, 3.852776125780096*^9}, {
+   3.852924399765195*^9, 3.852924411081913*^9}, {3.8529245392403803`*^9, 
+   3.852924568552794*^9}, {3.852924645146397*^9, 3.8529246711135807`*^9}, 
+   3.852924984616919*^9, {3.852925130613433*^9, 3.8529251943746357`*^9}, {
+   3.852925260265493*^9, 3.852925270419291*^9}, 3.852925376515007*^9, 
+   3.852925520280465*^9, 3.8529319641541557`*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"52ba1d30-fd9d-4cc4-832d-3000abacfb0e"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{826, 631},
+WindowMargins->{{Automatic, 80}, {Automatic, 0}},
+TaggingRules->{"TryRealOnly" -> False},
+FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"fb927a18-b7b5-462e-95c8-00d86e56baa6"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[422, 15, 263, 4, 98, "Title",ExpressionUUID->"87ba3b5b-771b-44a0-8189-bc7f77f5baa6"],
+Cell[688, 21, 332, 8, 58, "Text",ExpressionUUID->"f0c97f08-ecff-44e0-ac04-f3d73b4f7585"],
+Cell[CellGroupData[{
+Cell[1045, 33, 175, 3, 67, "Section",ExpressionUUID->"8067a23c-56f2-49b8-8d61-731c738d671e"],
+Cell[1223, 38, 440, 9, 30, "Input",ExpressionUUID->"67b74d6f-746c-4211-b601-bdf8a44774c1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1700, 52, 165, 3, 67, "Section",ExpressionUUID->"ef28fac9-ff42-4060-9477-376b39fc372a"],
+Cell[CellGroupData[{
+Cell[1890, 59, 1118, 20, 52, "Input",ExpressionUUID->"2ef42223-2d33-4162-becb-6e1f467f162d"],
+Cell[3011, 81, 3753, 78, 412, "Output",ExpressionUUID->"52ba1d30-fd9d-4cc4-832d-3000abacfb0e"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
